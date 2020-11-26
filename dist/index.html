@@ -76,8 +76,13 @@
     };
 
     const gestureStrings = {
-      'thumbs_up': '👍',
-      'victory': '✌🏻'
+      '0': '0',
+      '1': '1',
+      '2': '2',
+      '3': '3',
+      '4': '4',
+      '5': '5',
+      'rock': 'rock'
     };
 
     async function main() {
@@ -91,8 +96,13 @@
       // configure gesture estimator
       // add "✌🏻" and "👍" as sample gestures
       const knownGestures = [
-        fp.Gestures.VictoryGesture,
-        fp.Gestures.ThumbsUpGesture
+        fp.Gestures.ZeroGesture,
+        fp.Gestures.OneGesture,
+        fp.Gestures.TwoGesture,
+        fp.Gestures.ThreeGesture,
+        fp.Gestures.FourGesture,
+        fp.Gestures.FiveGesture,
+        fp.Gestures.RockGesture,
       ];
       const GE = new fp.GestureEstimator(knownGestures);
 

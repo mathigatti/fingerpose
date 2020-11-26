@@ -25,6 +25,8 @@ npm i --save fingerpose
 ## Usage
 A [fully working example](https://github.com/andypotato/fingerpose/blob/master/dist/index.html) can be found inside the `dist` folder. The basic steps are outlined below:
 
+For you modify the source code you can update the dist folder running `yarn install && yarn build`.
+
 #### Include "handpose" and this library
 ```
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
